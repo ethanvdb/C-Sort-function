@@ -6,15 +6,16 @@ using namespace std;
 //if not found the loop goes to end and returns 0
 int found(int arr[], int value, int len) {
 	for (int i = 0; i<len; i++) {
+		int state;
 		if (value == arr[i]) {
-			return 1;
+			state = 1;
 			break;
 		}
 		else {
-			return 0;
+			state= 0;
 		}
 	}
-	
+	return state;
 }
 
 
